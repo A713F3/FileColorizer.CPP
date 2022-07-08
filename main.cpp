@@ -27,7 +27,7 @@ int main(int argc, char** argv){
         cerr << "Invalid file!" << endl;
         return 0;
     }
-    cerr << "File succesfully loaded" << endl;
+    cerr << "File loaded successfully!" << endl;
 
     map<char, color> colors;
 
@@ -39,7 +39,7 @@ int main(int argc, char** argv){
 
     // Finding width and height of the output image
     // And creating random colors for each character
-    cerr << "\n-Colors:" << endl;
+    //cerr << "\n-Colors:" << endl;
     while (file){
         getline(file, line);
 
@@ -50,7 +50,7 @@ int main(int argc, char** argv){
                 int g = distribution(generator);
                 int b = distribution(generator);
 
-                cerr << c << ": " << r << ',' << g << ',' << b << endl;
+                //cerr << c << ": " << r << ',' << g << ',' << b << endl;
 
                 color new_color = {r, g, b};
 
@@ -96,7 +96,7 @@ int main(int argc, char** argv){
         }
     }
 
-    cerr << "Image successfully rendered!" << endl;
+    cerr << "\nImage rendered successfully!" << endl;
 
     return 0;
 }
