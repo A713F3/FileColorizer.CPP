@@ -39,7 +39,22 @@ int main(int argc, char** argv){
     cerr << "Width:  " << width << endl;
     cerr << "Height: " << height << endl; 
 
+    // Rendering output image
+    file.clear();
+    file.seekg(0);
 
+    cout << "P3\n" << width << ' ' << height << "\n255\n";
+
+    for (int i = 0; i < height; i++){
+        getline(file, line);
+
+        for (int j = 0; j < width; j++){
+            char ch = line[j];
+            int c = (int)ch;
+
+            cout << c << ' ' << c << ' ' << c << '\n';
+        }
+    }
 
     return 0;
 }
