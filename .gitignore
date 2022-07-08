@@ -1,3 +1,4 @@
 test.*
 main
 /.vscode
+.DS_Store
