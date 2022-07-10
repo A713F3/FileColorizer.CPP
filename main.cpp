@@ -98,5 +98,7 @@ int main(int argc, char** argv){
 
     cerr << "\nImage rendered successfully!" << endl;
 
+    file.close();
+
     return 0;
 }
